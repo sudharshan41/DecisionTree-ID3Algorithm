@@ -24,7 +24,7 @@ def get_avg_info_of_attribute(tensor:torch.Tensor, attribute:int):
     label_column = [t[-1].tolist() for t in tensor]                     # extract the target column
     total_length_of_column=len(Current_col_attribute)
     o=0
-    for x in multiple_diff_class:
+    for x in multiple_diff_class:                   #
         feature_count = Current_col_attribute.count(x)          # Finding the entropy of each unique feature in the column by extracting them seperately
         mul_factor_probs = torch.tensor(feature_count/total_length_of_column)
         t1=[]
