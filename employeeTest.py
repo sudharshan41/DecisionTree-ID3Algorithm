@@ -119,7 +119,7 @@ def test_case():
         print(e)
         print("Test Case 4 for the function get_selected_attribute FAILED [ERROR]")
     
-    # Recursive Decision Tree Construction
+    # Recursive Decision Tree Construction3
     try:
         print("\n--- Constructing Decision Tree ---\n")
         tree = construct_tree(dataset, cols=cols)
@@ -129,3 +129,5 @@ def test_case():
 
 if __name__ == "__main__":
     test_case()
+
+
